@@ -3,42 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <title>Tạp Hóa Acc Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      background: #0f172a;
-      color: white;
-      font-family: Arial;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      background: radial-gradient(circle at top, #0f172a, #020617 70%);
+      color: #e5e7eb;
+    }
+    header {
+      padding: 30px 20px 20px;
       text-align: center;
-      padding: 40px;
     }
-    .box {
-      background: #020617;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .container {
+      max-width: 520px;
+      margin: auto;
       padding: 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      max-width: 400px;
     }
-    a {
+    .card {
+      background: linear-gradient(180deg, #0f172a, #020617);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 1px solid #1e293b;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .card li {
+      padding: 10px 0;
+      border-bottom: 1px dashed #1e293b;
+      font-size: 14px;
+    }
+    .card li:last-child {
+      border-bottom: none;
+    }
+    .btn {
       display: block;
-      margin-top: 15px;
-      color: #38bdf8;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      border-radius: 14px;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    .btn-main {
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      color: #020617;
+      box-shadow: 0 0 25px rgba(34,197,94,0.4);
+    }
+    .btn-main:active {
+      transform: scale(0.98);
+    }
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 15px;
+    }
+    .btn-sub {
+      background: #020617;
+      border: 1px solid #1e293b;
+      color: #e5e7eb;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 12px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
 
-<h1>🔥 TẠP HÓA ACC GAME</h1>
-<p>Chuyên mua bán acc Liên Quân & Free Fire</p>
+<header>
+  <h1>🔥 TẠP HÓA ACC GAME</h1>
+  <p>Shop mua bán acc Liên Quân & Free Fire uy tín</p>
+</header>
 
-<div class="box">
-  <p>✔ Acc trắng thông tin</p>
-  <p>✔ Giao dịch nhanh gọn</p>
-  <p>✔ Hỗ trợ qua Zalo / Facebook</p>
+<div class="container">
+
+  <div class="card">
+    <ul>
+      <li>✅ Acc trắng thông tin – an toàn</li>
+      <li>⚡ Giao dịch nhanh – rõ ràng</li>
+      <li>🔒 Không trung gian – không rủi ro</li>
+      <li>💬 Hỗ trợ trực tiếp Zalo / Facebook</li>
+    </ul>
+  </div>
+
+  <a href="market.html" class="btn btn-main">
+    🎮 XEM ACC ĐANG BÁN
+  </a>
+
+  <div class="contact">
+    <a href="#" class="btn btn-sub">📱 Zalo</a>
+    <a href="#" class="btn btn-sub">📘 Facebook</a>
+  </div>
+
 </div>
 
-<a href="market.html">👉 Xem acc đang bán</a>
+<footer>
+  © 2026 Taphoaaccgame • All rights reserved
+</footer>
 
 </body>
 </html>
